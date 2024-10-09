@@ -1,0 +1,11 @@
+snake_case: For variables, functions, modules, and package names.
+CamelCase: For class names.
+UPPERCASE_SNAKE_CASE: For constants.
+_single_leading_underscore: For internal use.
+__double_leading_and_trailing_underscore: For special methods or dunder methods.
+Follow PEP 8 (Python’s style guide) for a more standardized coding practice.
+
+
+
+
+
