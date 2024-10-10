@@ -1,4 +1,26 @@
-In Python, a **function** is a reusable block of code designed to perform a specific task. Functions allow you to write modular code, make it more readable, and avoid repetition. Python has both **built-in functions** (like `print()`, `len()`) and **user-defined functions** that you can create.
+In Python, a **function** is a reusable block of code designed to perform a specific task. 
+Functions allow you to write modular code, make it more readable, and avoid repetition. Python has both **built-in functions** (like `print()`, `len()`) and **user-defined functions** that you can create.
+
+
+# simple to write function:
+
+# decleare variable
+a = 2
+b = 4
+
+# define function
+def sub():
+  sub = (a + b)
+  print(sub)
+
+#invoke function
+sub()
+
+
+# EXPLANATION
+
+two variables, a and b, are declared and assigned the values 2 and 4, respectively. 
+These variables are global variables, meaning they can be accessed from anywhere in the script, including within functions.
 
 ### 1. **Defining a Function**
 To define a function in Python, you use the `def` keyword followed by the function name, parentheses `()`, and a colon `:`. The code inside the function must be indented.
