@@ -1,0 +1,59 @@
+List
+Mutable: You can change, add, or remove elements after the list is created.
+Syntax: Defined using square brackets [].
+Indexing: Zero-based, so the first element has index 0.
+Example of a List:
+python
+Copy code
+# Create a list
+my_list = [1, 2, 3, 'apple', 'banana']
+
+# Access elements
+print(my_list[0])  # Output: 1
+
+# Modify elements
+my_list[1] = 20
+print(my_list)  # Output: [1, 20, 3, 'apple', 'banana']
+
+# Add elements
+my_list.append('orange')
+print(my_list)  # Output: [1, 20, 3, 'apple', 'banana', 'orange']
+
+# Remove elements
+my_list.remove('apple')
+print(my_list)  # Output: [1, 20, 3, 'banana', 'orange']
+Tuple
+Immutable: Once a tuple is created, you cannot change, add, or remove elements.
+Syntax: Defined using parentheses ().
+Indexing: Same as lists, starting from 0.
+Example of a Tuple:
+python
+Copy code
+# Create a tuple
+my_tuple = (1, 2, 3, 'apple', 'banana')
+
+# Access elements
+print(my_tuple[0])  # Output: 1
+
+# You cannot modify the tuple
+# my_tuple[1] = 20  # This will raise an error: TypeError
+
+# Tuples are immutable, but you can access elements
+print(my_tuple[1:4])  # Output: (2, 3, 'apple')
+
+# You can also create a single-element tuple by including a comma
+single_element_tuple = (5,)
+print(single_element_tuple)  # Output: (5,)
+Key Differences:
+Mutability: Lists are mutable (can be changed), while tuples are immutable (cannot be changed).
+Use Case: Lists are used when you need a collection that can be modified, while tuples are useful when you need a collection that should not change (e.g., fixed data, return multiple values from a function).
+
+
+
+
+
+
+
+
+
+
