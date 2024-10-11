@@ -1,0 +1,25 @@
+
+These are used for basic mathematical operations.
+
+Operator	Description	          Example
++	         Addition   	        3 + 2 → 5
+-	         Subtraction	        5 - 2 → 3
+*	         Multiplication	      4 * 2 → 8
+/	         Division     	      8 / 2 → 4.0
+%	         Modulus (remainder)	10 % 3 → 1
+**	       Exponentiation	      2 ** 3 → 8
+//	       Floor Division	      7 // 2 → 3
+
+
+
+
+a = 10
+b = 3
+
+print(a + b)  # 13
+print(a - b)  # 7
+print(a * b)  # 30
+print(a / b)  # 3.333
+print(a % b)  # 1 (remainder)
+print(a ** b) # 1000 (10 to the power of 3)
+print(a // b) # 3 (floor division)
