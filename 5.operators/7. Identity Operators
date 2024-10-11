@@ -1,0 +1,22 @@
+Used to compare objects to check if they are the same object in memory.
+
+Operator	Description	Example
+is	Returns True if both variables are the same object	a is b
+is not	Returns True if both variables are not the same object	a is not b
+Example:
+python
+Copy code
+a = [1, 2, 3]
+b = [1, 2, 3]
+c = a
+
+print(a is c)      # True (a and c refer to the same object)
+print(a is b)      # False (a and b refer to different objects with the same value)
+print(a == b)      # True (a and b have the same values)
+These operators are fundamental in Python and are used across all types of programming tasks.
+
+
+
+
+
+
