@@ -1,0 +1,15 @@
+Used to combine conditional statements.
+
+Operator	Description	Example
+and	Returns True if both conditions are True	True and False → False
+or	Returns True if at least one condition is True	True or False → True
+not	Reverses the logical state	not True → False
+Example:
+python
+Copy code
+a = True
+b = False
+
+print(a and b)  # False
+print(a or b)   # True
+print(not a)    # False
