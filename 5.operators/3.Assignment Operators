@@ -1,0 +1,21 @@
+Used to assign values to variables.
+
+Operator	Description	Example
+=	Assign	a = 10
++=	Add and assign	a += 2 → a = a+2
+-=	Subtract and assign	a -= 2 → a = a-2
+*=	Multiply and assign	a *= 3 → a = a*3
+/=	Divide and assign	a /= 2 → a = a/2
+%=	Modulus and assign	a %= 2 → a = a%2
+**=	Power and assign	a **= 3 → a = a**3
+
+
+Example:
+python
+Copy code
+x = 5
+x += 3  # Equivalent to x = x + 3, so x becomes 8
+print(x)
+
+x *= 2  # Equivalent to x = x * 2, so x becomes 16
+print(x)
