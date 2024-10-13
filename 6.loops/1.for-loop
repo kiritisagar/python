@@ -1,0 +1,32 @@
+Loops in Python allow you to execute a block of code repeatedly until a certain condition is met. Python primarily supports two types of loops:
+
+1.for` loop
+The `for` loop in Python iterates over a sequence (like a list, tuple, string, or range) and executes a block of code for each item in the sequence.
+
+for i in range(5):
+    print(i)
+
+explanation:
+The for keyword in Python is used to create a loop.
+i is a loop variable (or loop counter). It takes on each value in the sequence
+in acts as a connector between the loop variable
+The colon : indicates the start of the code block that will be executed inside the loop.
+
+
+# break and continue
+
+break: Terminates the loop prematurely, skipping any further iterations.
+continue: Skips the current iteration and moves to the next one.
+
+
+Example with break:
+for i in range(5):
+    if i == 3:
+        break  # Exit loop when i is 3
+    print(i)
+
+Example with continue:
+for i in range(5):
+    if i == 3:
+        continue  # Skip when i is 3
+    print(i)
