@@ -1,10 +1,10 @@
-List
+# List
 Mutable: You can change, add, or remove elements after the list is created.
 Syntax: Defined using square brackets [].
 Indexing: Zero-based, so the first element has index 0.
+
 Example of a List:
-python
-Copy code
+
 # Create a list
 my_list = [1, 2, 3, 'apple', 'banana']
 
@@ -22,7 +22,9 @@ print(my_list)  # Output: [1, 20, 3, 'apple', 'banana', 'orange']
 # Remove elements
 my_list.remove('apple')
 print(my_list)  # Output: [1, 20, 3, 'banana', 'orange']
-Tuple
+
+
+## Tuple
 Immutable: Once a tuple is created, you cannot change, add, or remove elements.
 Syntax: Defined using parentheses ().
 Indexing: Same as lists, starting from 0.
