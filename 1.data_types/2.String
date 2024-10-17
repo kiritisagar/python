@@ -1,0 +1,113 @@
+# String:
+A string in Python is a sequence of characters enclosed in single quotes ('), double quotes ("), or triple quotes (''' or """). 
+Strings can contain letters, numbers, symbols, and whitespace.. 
+Strings are immutable, meaning once you create a string, you cannot change its contents.
+
+# Using single quotes
+string1 = 'Hello, World!'
+# Using double quotes
+string2 = "Python is awesome!"
+# Using triple quotes (for multi-line strings)
+string3 = '''This is a
+multi-line string.'''
+# Print the strings
+print(string1)  # Output: Hello, World!
+print(string2)  # Output: Python is awesome!
+print(string3)  # Output: This is a
+                 #         multi-line string.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+# A.Accessing Characters in a String
+You can access individual characters in a string using indexing. Indexing starts at 0.
+
+Example:
+my_string = "Hello"
+
+first_char = my_string[0]   # Output: 'H'
+last_char = my_string[-1]    # Output: 'o'
+
+print(first_char)  # Output: H
+print(last_char)   # Output: o
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+# B.String Slicing
+You can extract a portion (substring) of a string using slicing.
+
+my_string = "Hello, World!"
+
+# Slicing to get 'Hello'
+substring1 = my_string[0:5]  # Output: 'Hello' (characters from index 0 to 4)
+# Slicing to get 'World'
+substring2 = my_string[7:12]  # Output: 'World' (characters from index 7 to 11)
+print(substring1)  # Output: Hello
+print(substring2)  # Output: World
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+# c.spit:
+
+1.Basic Usage
+my_string = "Hello, World! How are you?"
+words = my_string.split()  # Default separator is whitespace
+
+print(words)  
+# Output: ['Hello,', 'World!', 'How', 'are', 'you?']
+
+
+2. Specifying a Separator
+Example: Splitting by a comma
+
+my_string = "apple,banana,cherry"
+fruits = my_string.split(",")  # Using comma as a separator
+
+print(fruits)
+print(fruits[0])
+# Output: ['apple', 'banana', 'cherry']
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# d.Python provides many built-in methods to manipulate strings. Here are some common ones:
+
+upper(): Converts the string to uppercase.
+lower(): Converts the string to lowercase.
+
+text = "  Hello, World!  "  # Original string with leading and trailing spaces
+
+# Converting to uppercase
+upper_text = text.upper()  # Converts all characters to uppercase
+# Output: '  HELLO, WORLD!  ' (Leading and trailing spaces remain)
+
+# Converting to lowercase
+lower_text = text.lower()  # Converts all characters to lowercase
+# Output: '  hello, world!  ' (Leading and trailing spaces remain)
+
+# Print results
+print(upper_text)  # Output: '  HELLO, WORLD!  '
+print(lower_text)  # Output: '  hello, world!  '
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# e.strip(): 
+method to remove whitespace from a string.
+
+text = "               hello, World!  "  # Original string with leading spaces and a trailing space
+
+# Stripping whitespace
+stripped_text = text.strip()  # Removes leading and trailing whitespace
+# Output: 'hello, World!' (Leading spaces removed, trailing space removed)
+
+# Print the original text (with whitespace)
+print(text)  # Output: '               hello, World!  '
+
+# Print the stripped text (without whitespace)
+print(stripped_text)  # Output: 'hello, World!'
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# f. replace() :
+# Original string
+text = "Hello, World! Welcome to the World of Python."  # A string with the word 'World' appearing twice.
+
+# Replacing occurrences of 'World' with 'Universe'
+new_text = text.replace("World", "Universe")  # Replace all occurrences of 'World' with 'Universe'.
+
+# Print results
+print(text)        # Output: Original string, unchanged.
+print(new_text)    # Output: 'Hello, Universe! Welcome to the Universe of Python.'
+
+
