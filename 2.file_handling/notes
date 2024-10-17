@@ -53,15 +53,10 @@ You can write data to a file using:
 - writelines(): Writes a list of strings to the file.
 
 # Example:
+# Example:
 file = open('example.txt', 'w')  # Open file in write mode
-file.write('Hello, World!\n')  # Write a string to the file
-file.close()
-
-
-- Example with `writelines():
-file = open('example.txt', 'w')
-lines = ['First line\n', 'Second line\n']
-file.writelines(lines)  # Write multiple lines to the file
+content = "hello"
+file.write(content)  # Write a string to the file
 file.close()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -70,10 +65,35 @@ When you open a file in append mode (`'a'`), the data is written at the end of t
 
 #### Example:
 file = open('example.txt', 'a')  # Open file in append mode
-file.write('This is an appended line.\n')
+file.write('This is an new line')
 file.close()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.r+ mode:
+it is used for opening a file with both read and write permissions.
+The file must already exist for this mode to work. 
+If the file does not exist, an error (specifically, a FileNotFoundError) will be raised.
+When you open a file in r+ mode, the cursor (file pointer) starts at the beginning of the file.
+If you write to the file without moving the cursor, it will overwrite the existing content from the start.
+To add new content at the end of the file, move the cursor to the end first with file.seek(0, 2).
+
+# example:
+file = open("munna.txt", "r+")  # This mode allows you to read and write
+file.seek(0, 2)  # Move the cursor to the end
+content = "its new lie22"  # Define the new content to write
+file.write(content)  # Write the new content to the file
+file.close()  # Close the file
+
+# explanation:
+The file.seek(0, 2) function is used in Python to move the file pointer (cursor) to a specific position within a file. 
+
+Explanation of file.seek(0, 2)
+Function Purpose:
+The seek() method changes the current position of the file pointer.
+Parameters:
+The 0 means "move 0 bytes" from the position you want to start at.
+The 2 means you are starting from the end of the file.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 4.Closing a File (`close()` function):
 Always close the file after performing file operations to free up system resources and to ensure that data is properly written to the file. 
@@ -84,11 +104,6 @@ file = open('example.txt', 'r')
 file.close()  # Close the file
 
 __________________________________________________________________________________________________________________________________________________________________
-
-
-
-
-
 
 
 
