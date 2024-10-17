@@ -1,0 +1,18 @@
+Tuples in Python are similar to lists but have some key differences. 
+Here’s a detailed overview of tuples, including how to create them, access their elements, and their characteristics.
+
+What is a Tuple?
+A tuple is an ordered collection of elements.
+Tuples are immutable, meaning once they are created, their elements cannot be changed, added, or removed.
+Tuples can contain elements of different data types (e.g., integers, strings, floats).
+Creating a Tuple
+You can create a tuple by enclosing elements in parentheses ().
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Example: Creating a Tuple
+
+# Creating a tuple
+my_tuple = ("apple", "banana", "cherry")
+
+# Printing the tuple
+print(my_tuple)  # Output: ('apple', 'banana', 'cherry')
