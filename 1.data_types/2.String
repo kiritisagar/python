@@ -110,4 +110,15 @@ new_text = text.replace("World", "Universe")  # Replace all occurrences of 'Worl
 print(text)        # Output: Original string, unchanged.
 print(new_text)    # Output: 'Hello, Universe! Welcome to the Universe of Python.'
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# g.append:
+appending a string means adding another string to the end of an existing string
+
+name = ["apple", "banana"]  # Use a list instead of a tuple
+
+print(name)  # Output: ['apple', 'banana']
+
+name.append("cherry")  # Append an item to the list
+
+print(name)  # Output: ['apple', 'banana', 'cherry']
 
