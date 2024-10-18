@@ -1,0 +1,15 @@
+way to handle folders and repositories in Python using the os and shutil modules
+
+# Basic Folder Operations
+
+1.Creating a Folder:
+
+import os
+os.makedirs("my_folder", exist_ok=True)  # Create a folder (won't raise an error if it exists)
+
+2.Listing Files in a Folder:
+files = os.listdir("my_folder")  # Get a list of files and folders
+print(files)  # Print the list
+
+3.Deleting a Folder:
+os.rmdir("my_folder")  # Delete the folder (must be empty)
