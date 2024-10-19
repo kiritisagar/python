@@ -1,0 +1,89 @@
+The structure includes if, elif (else if), and else. 
+The program checks the conditions in order, and the first condition that evaluates to True will trigger the corresponding code block. 
+If none of the conditions are met, the else block will be executed.
+
+## Syntax of if, elif, else::
+if condition1:
+    # Code to execute if condition1 is True
+elif condition2:
+    # Code to execute if condition1 is False and condition2 is True
+else:
+    # Code to execute if all conditions are False
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1.1 Simple if statement:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A simple if statement in Python checks a condition and executes a block of code if the condition is True. 
+If the condition is False, the block of code inside the if statement is skipped, and the program continues with the next part of the code.
+
+## example:
+x = 10
+if x > 5:
+    print("x is greater than 5")
+
+
+## Explanation:
+Condition: The condition in the if statement is x > 5. It checks if the value of x is greater than 5.
+Execution: If the condition evaluates to True (which it does in this case, since x = 10), the code inside the if block is executed.
+Skip if False: If the condition were False (e.g., x = 3), the code inside the if block would be skipped
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 1.2 if-else Statement:
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The if-else statement allows you to execute one block of code if a condition is true and a different block of code if the condition is false. 
+Essentially, the if checks the condition, and if it evaluates to True, the code inside the if block runs. If the condition is False, the else block runs.
+
+
+x = 3
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is less than or equal to 5")
+
+explanation:
+Condition: The condition in the if statement is x > 5. It checks whether x is greater than 5.
+True Path: If the condition is True (i.e., x > 5), the message "x is greater than 5" will be printed.
+False Path: If the condition is False (i.e., x <= 5), the else block will execute, and the message "x is less than or equal to 5" will be printed.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 1.3 if-elif-else statement:
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The if-elif-else statement is used when you want to check multiple conditions sequentially. 
+If the first if condition is false, the elif (short for "else if") conditions are checked in order. 
+If none of the if or elif conditions are true, the else block is executed.
+
+age = 16
+
+if age < 13:
+    print("You are a child.")
+elif age < 18:
+    print("You are a teenager.")
+else:
+    print("You are an adult.")
+
+Explanation:
+The first condition checks if age < 13. If true, it prints "You are a child."
+If the first condition is false, the program checks the next condition age < 18. If this is true, it prints "You are a teenager."
+If both conditions are false, the else block executes and prints "You are an adult."
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 1.4 Nested if Statements:
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A nested if statement is when you use an if statement inside another if or else block. 
+This allows you to check multiple conditions in a more complex decision-making process.
+
+x = 10
+y = 20
+
+if x > 5:
+    print("x is greater than 5")
+    if y > 15:
+        print("y is greater than 15")
+    else:
+        print("y is less than or equal to 15")
+else:
+    print("x is less than or equal to 5")
+
+
+Explanation:
+The first if checks if x > 5. Since x = 10, this condition is true, and it prints "x is greater than 5".
+Inside the first if block, there's another if that checks if y > 15. Since y = 20, this condition is also true, so it prints "y is greater than 15".
+If x was less than or equal to 5, the program would skip the inner if and go to the else block.
