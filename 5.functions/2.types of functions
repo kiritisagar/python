@@ -1,0 +1,76 @@
+
+
+1. Built-in Functions:
+2. User-Defined Functions:
+
+
+## 1. Built-in Functions:
+Python comes with many pre-defined functions. Some commonly used ones:
+
+Mathematical functions:
+
+abs(): Returns the absolute value.
+sum(): Returns the sum of all items in an iterable.
+max(), min(): Return the maximum and minimum values.
+
+Example:
+print(abs(-5))    # Output: 5
+print(max(1, 2, 3))  # Output: 3
+
+Type and conversion functions:
+int(), float(), str(): Convert types.
+type(): Returns the type of an object.
+list(), set(), dict(): Convert to list, set, or dictionary.
+
+Example:
+print(type(10))      # Output: <class 'int'>
+print(str(123))      # Output: '123'
+
+Input/output functions:
+print(): Outputs text to the console.
+input(): Takes input from the user.
+Example:
+name = input("Enter your name: ")
+print(f"Hello, {name}!")
+Iterables and sequences:
+
+len(): Returns the length of a sequence.
+range(): Generates a range of numbers.
+Example:
+
+python
+Copy code
+print(len("hello"))    # Output: 5
+print(list(range(5)))  # Output: [0, 1, 2, 3, 4]
+File handling:
+
+open(): Opens a file.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. User-Defined Functions:
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functions you create yourself using def.
+A user-defined function is a block of code that performs a specific task, defined by the user. T
+hese functions are created using the def keyword followed by the function name and parentheses ().
+
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Sagar")
+
+
+Explanation:
+def greet(name)::
+
+def: This is a keyword used to define a function in Python.
+greet: This is the name of the function. You can give it any valid name.
+(name): This is the parameter of the function, which will accept an argument when the function is called. In this case, name is used to pass a string (e.g., "Sagar").
+print(f"Hello, {name}!"):
+
+print(): This is a built-in function that outputs text to the console.
+f"Hello, {name}!": This is an f-string (formatted string literal), which allows us to insert the value of the name variable inside the string.
+{name}: The value passed to name will be placed in this location. If name = "Sagar", the result will be "Hello, Sagar!".
+greet("Sagar"):
+
+This is how we call the function greet() and pass "Sagar" as an argument to the name parameter.
+The function will execute, and the output will be:
