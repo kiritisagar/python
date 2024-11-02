@@ -1,0 +1,6 @@
+Explanation: Type casting (or type conversion) is converting one data type to another. Python provides functions like int(), float(), str(), and list() for casting.
+Example:
+python
+Copy code
+x = "123"
+y = int(x)  # Converts the string "123" to the integer 123
