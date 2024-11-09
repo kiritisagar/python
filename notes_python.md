@@ -29,3 +29,6 @@ Bytecode is not readable by humans and is stored in a .pyc file. This translatio
 
 **Python Virtual Machine (PVM)**: 
 The PVM is Python’s engine that actually runs the bytecode on your computer. It reads the bytecode instructions and tells your computer what to do.
+
+**variable**
+A variable in programming is a named storage location in memory that holds a value. Variables are used to store data that can be referenced and manipulated throughout a program.
